@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  dairy: MyString
+  vegetables: MyString
+  fruits: MyString
+  meat: MyString
+  others: MyString
+
+two:
+  dairy: MyString
+  vegetables: MyString
+  fruits: MyString
+  meat: MyString
+  others: MyString

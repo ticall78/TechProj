@@ -1,0 +1,28 @@
+<p>
+  <b>Dairy:</b>
+  <%=h @categories.dairy %>
+</p>
+
+<p>
+  <b>Vegetables:</b>
+  <%=h @categories.vegetables %>
+</p>
+
+<p>
+  <b>Fruits:</b>
+  <%=h @categories.fruits %>
+</p>
+
+<p>
+  <b>Meat:</b>
+  <%=h @categories.meat %>
+</p>
+
+<p>
+  <b>Others:</b>
+  <%=h @categories.others %>
+</p>
+
+
+<%= link_to 'Edit', edit_categories_path(@categories) %> |
+<%= link_to 'Back', categories_path %>

@@ -1,0 +1,63 @@
+<p>
+  <b>Itemid:</b>
+  <%=h @inventories.itemID %>
+</p>
+
+<p>
+  <b>Itemname:</b>
+  <%=h @inventories.itemName %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%=h @inventories.category %>
+</p>
+
+<p>
+  <b>Itemsize:</b>
+  <%=h @inventories.itemSize %>
+</p>
+
+<p>
+  <b>Supplier:</b>
+  <%=h @inventories.supplier %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @inventories.description %>
+</p>
+
+<p>
+  <b>Purchasesdate:</b>
+  <%=h @inventories.purchasesDate %>
+</p>
+
+<p>
+  <b>Purchaseprice:</b>
+  <%=h @inventories.purchasePrice %>
+</p>
+
+<p>
+  <b>Quantityonhand:</b>
+  <%=h @inventories.quantityOnHand %>
+</p>
+
+<p>
+  <b>Reorderlimit:</b>
+  <%=h @inventories.reorderLimit %>
+</p>
+
+<p>
+  <b>Salesprice:</b>
+  <%=h @inventories.salesPrice %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @inventories.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_inventories_path(@inventories) %> |
+<%= link_to 'Back', inventories_path %>

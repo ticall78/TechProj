@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  itemID: 1
+  itemName: MyString
+  category: MyString
+  itemSize: MyString
+  supplier: 1
+  description: MyString
+  purchasesDate: 2014-03-31
+  purchasePrice: 
+  quantityOnHand: 1
+  reorderLimit: 1
+  salesPrice: 
+  status: MyString
+
+two:
+  itemID: 1
+  itemName: MyString
+  category: MyString
+  itemSize: MyString
+  supplier: 1
+  description: MyString
+  purchasesDate: 2014-03-31
+  purchasePrice: 
+  quantityOnHand: 1
+  reorderLimit: 1
+  salesPrice: 
+  status: MyString

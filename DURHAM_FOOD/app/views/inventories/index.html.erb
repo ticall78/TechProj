@@ -1,0 +1,42 @@
+<h1>Listing inventories</h1>
+
+<table>
+  <tr>
+    <th>Itemid</th>
+    <th>Itemname</th>
+    <th>Category</th>
+    <th>Itemsize</th>
+    <th>Supplier</th>
+    <th>Description</th>
+    <th>Purchasesdate</th>
+    <th>Purchaseprice</th>
+    <th>Quantityonhand</th>
+    <th>Reorderlimit</th>
+    <th>Salesprice</th>
+    <th>Status</th>
+  </tr>
+
+<% for inventories in @inventories %>
+  <tr>
+    <td><%=h inventories.itemID %></td>
+    <td><%=h inventories.itemName %></td>
+    <td><%=h inventories.category %></td>
+    <td><%=h inventories.itemSize %></td>
+    <td><%=h inventories.supplier %></td>
+    <td><%=h inventories.description %></td>
+    <td><%=h inventories.purchasesDate %></td>
+    <td><%=h inventories.purchasePrice %></td>
+    <td><%=h inventories.quantityOnHand %></td>
+    <td><%=h inventories.reorderLimit %></td>
+    <td><%=h inventories.salesPrice %></td>
+    <td><%=h inventories.status %></td>
+    <td><%= link_to 'Show', inventories %></td>
+    <td><%= link_to 'Edit', edit_inventories_path(inventories) %></td>
+    <td><%= link_to 'Destroy', inventories, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New inventories', new_inventories_path %>

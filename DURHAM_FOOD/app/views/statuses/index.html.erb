@@ -1,0 +1,22 @@
+<h1>Listing statuses</h1>
+
+<table>
+  <tr>
+    <th>Statusid</th>
+    <th>Statusdescription</th>
+  </tr>
+
+<% for statuses in @statuses %>
+  <tr>
+    <td><%=h statuses.statusId %></td>
+    <td><%=h statuses.statusDescription %></td>
+    <td><%= link_to 'Show', statuses %></td>
+    <td><%= link_to 'Edit', edit_statuses_path(statuses) %></td>
+    <td><%= link_to 'Destroy', statuses, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New statuses', new_statuses_path %>

@@ -1,0 +1,38 @@
+<p>
+  <b>Supplierid:</b>
+  <%=h @suppliers.supplierID %>
+</p>
+
+<p>
+  <b>Suppliername:</b>
+  <%=h @suppliers.supplierName %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @suppliers.address %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @suppliers.email %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @suppliers.phone %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%=h @suppliers.fax %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%=h @suppliers.website %>
+</p>
+
+
+<%= link_to 'Edit', edit_suppliers_path(@suppliers) %> |
+<%= link_to 'Back', suppliers_path %>

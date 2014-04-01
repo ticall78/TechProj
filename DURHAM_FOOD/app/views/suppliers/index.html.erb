@@ -1,0 +1,32 @@
+<h1>Listing suppliers</h1>
+
+<table>
+  <tr>
+    <th>Supplierid</th>
+    <th>Suppliername</th>
+    <th>Address</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Fax</th>
+    <th>Website</th>
+  </tr>
+
+<% for suppliers in @suppliers %>
+  <tr>
+    <td><%=h suppliers.supplierID %></td>
+    <td><%=h suppliers.supplierName %></td>
+    <td><%=h suppliers.address %></td>
+    <td><%=h suppliers.email %></td>
+    <td><%=h suppliers.phone %></td>
+    <td><%=h suppliers.fax %></td>
+    <td><%=h suppliers.website %></td>
+    <td><%= link_to 'Show', suppliers %></td>
+    <td><%= link_to 'Edit', edit_suppliers_path(suppliers) %></td>
+    <td><%= link_to 'Destroy', suppliers, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New suppliers', new_suppliers_path %>

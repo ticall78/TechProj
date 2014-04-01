@@ -1,0 +1,28 @@
+<h1>Listing categories</h1>
+
+<table>
+  <tr>
+    <th>Dairy</th>
+    <th>Vegetables</th>
+    <th>Fruits</th>
+    <th>Meat</th>
+    <th>Others</th>
+  </tr>
+
+<% for categories in @categories %>
+  <tr>
+    <td><%=h categories.dairy %></td>
+    <td><%=h categories.vegetables %></td>
+    <td><%=h categories.fruits %></td>
+    <td><%=h categories.meat %></td>
+    <td><%=h categories.others %></td>
+    <td><%= link_to 'Show', categories %></td>
+    <td><%= link_to 'Edit', edit_categories_path(categories) %></td>
+    <td><%= link_to 'Destroy', categories, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New categories', new_categories_path %>
