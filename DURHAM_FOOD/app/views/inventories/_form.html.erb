@@ -1,0 +1,75 @@
+  <p>
+    <b>Itemid</b><br />
+    <%= f.text_field :itemID %>
+  </p>
+  
+  <p><b>Category</b><br/>
+	<%= select("inventory", "category_id", Category.find(:all).collect{ |c| [c.name, c.id] }) %>
+</p>
+
+<p><b>Supplier</b><br/>
+	<%= select("inventory", "supplier_id", Supplier.find(:all).collect{ |c| [c.name, c.id] }) %>
+</p>
+
+<p><b>Status</b><br/>
+	<%= select("inventory", "status_id", Status.find(:all).collect{ |c| [c.name, c.id] }) %>
+</p>
+
+  <p>
+    <b>Itemname</b><br />
+    <%= f.text_field :itemName %>
+  </p>
+
+  <p>
+    <b>Category</b><br />
+    <%= f.text_field :category %>
+  </p>
+
+  <p>
+    <b>Itemsize</b><br />
+    <%= f.text_field :itemSize %>
+  </p>
+
+  <p>
+    <b>Supplier</b><br />
+    <%= f.text_field :supplier %>
+  </p>
+
+  <p>
+    <b>Description</b><br />
+    <%= f.text_field :description %>
+  </p>
+
+  <p>
+    <b>Purchasesdate</b><br />
+    <%= f.date_select :purchasesDate %>
+  </p>
+
+  <p>
+    <b>Purchaseprice</b><br />
+    <%= f.text_field :purchasePrice %>
+  </p>
+
+  <p>
+    <b>Quantityonhand</b><br />
+    <%= f.text_field :quantityOnHand %>
+  </p>
+
+  <p>
+    <b>Reorderlimit</b><br />
+    <%= f.text_field :reorderLimit %>
+  </p>
+
+  <p>
+    <b>Salesprice</b><br />
+    <%= f.text_field :salesPrice %>
+  </p>
+
+  <p>
+    <b>Status</b><br />
+    <%= f.text_field :status %>
+  </p>
+
+  <p>
+    <%= f.submit button %>
+  </p>

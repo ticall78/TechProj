@@ -8,15 +8,15 @@ class CreateInventories < ActiveRecord::Migration
       t.integer :supplier
       t.string :description
       t.date :purchasesDate
-      t.double :purchasePrice 
-      t.integer :quantityOnHand
-      t.integer :reorderLimit
-      t.double :salesPrice
+      t.decimal :purchasePrice, :precision=> 4, :scale => 2
+      t.integer :quantityOnHand, :precision=> 3
+      t.integer :reorderLimit, :limit=> 99
+      t.decimal :salesPrice, :precision=> 4, :scale => 2
       t.string :status
 
-	  t.references :categories
-	  t.references : suppliers
-	  t.references : statuses
+	  t.references :category
+	  t.references :supplier
+	  t.references :status
       t.timestamps
     end
   end

@@ -3,69 +3,7 @@
 <%= error_messages_for :inventories %>
 
 <% form_for(@inventories) do |f| %>
-  <p>
-    <b>Itemid</b><br />
-    <%= f.text_field :itemID %>
-  </p>
-
-  <p>
-    <b>Itemname</b><br />
-    <%= f.text_field :itemName %>
-  </p>
-
-  <p>
-    <b>Category</b><br />
-    <%= f.text_field :category %>
-  </p>
-
-  <p>
-    <b>Itemsize</b><br />
-    <%= f.text_field :itemSize %>
-  </p>
-
-  <p>
-    <b>Supplier</b><br />
-    <%= f.text_field :supplier %>
-  </p>
-
-  <p>
-    <b>Description</b><br />
-    <%= f.text_field :description %>
-  </p>
-
-  <p>
-    <b>Purchasesdate</b><br />
-    <%= f.date_select :purchasesDate %>
-  </p>
-
-  <p>
-    <b>Purchaseprice</b><br />
-    <%= f.text_field :purchasePrice %>
-  </p>
-
-  <p>
-    <b>Quantityonhand</b><br />
-    <%= f.text_field :quantityOnHand %>
-  </p>
-
-  <p>
-    <b>Reorderlimit</b><br />
-    <%= f.text_field :reorderLimit %>
-  </p>
-
-  <p>
-    <b>Salesprice</b><br />
-    <%= f.text_field :salesPrice %>
-  </p>
-
-  <p>
-    <b>Status</b><br />
-    <%= f.text_field :status %>
-  </p>
-
-  <p>
-    <%= f.submit "Update" %>
-  </p>
+ <%= render :partial => "form", :locals => { :f => f, :button => "Update" } %>
 <% end %>
 
 <%= link_to 'Show', @inventories %> |
